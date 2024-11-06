@@ -19,7 +19,6 @@ public class ActionBody extends BaseClass implements ActionInterface{
 				prop.load(fl);
 				
 				} catch (IOException e) {
-					e.printStackTrace();
 				}
 			return prop;
 	}
