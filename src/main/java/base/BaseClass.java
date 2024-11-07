@@ -26,8 +26,7 @@ public class BaseClass {
 	public void launchBrowser(){
 		Properties prop = new Properties();
 		try {
-			FileInputStream fl = new FileInputStream(
-					"C:\\Selenium\\WellBux1\\src\\main\\resources\\GlobalData.properties");
+			FileInputStream fl = new FileInputStream(System.getProperty("user.dir")+ "\\src\\main\\resources\\GlobalData.properties");
 			prop.load(fl);
 			
 			} catch (IOException e) {
