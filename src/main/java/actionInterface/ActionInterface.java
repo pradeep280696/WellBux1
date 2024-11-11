@@ -2,10 +2,13 @@ package actionInterface;
 
 import java.util.Properties;
 
-public interface ActionInterface {
+import base.BaseClass;
+
+public interface ActionInterface{
 	
 	
 	
 	public Properties globalData1();
+	public void PageComplete_loaded();
 
 }

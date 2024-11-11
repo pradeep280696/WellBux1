@@ -123,5 +123,6 @@
 	<classpathentry kind="lib" path="C:/Selenium_data/selenium-java-4.26.0/selenium-support-4.26.0-sources.jar"/>
 	<classpathentry kind="lib" path="C:/Selenium_data/selenium-java-4.14.1/selenium-api-4.14.1.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
+	<classpathentry kind="src" path="/Famplanr"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

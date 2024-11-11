@@ -40,6 +40,15 @@ public class LoginPage_object extends BaseClass{
 	@FindBy(xpath = "//div[@aria-label='User not found']")
 	public WebElement UserNotFound_message;
 	
+	@FindBy(xpath = "//div[@id='toast-container']/div/div[1]")
+	public WebElement PasswordDoesNotMatch_Message;
+	
+	@FindBy(xpath = "//div[@class='login__input'][1]/div")
+	public WebElement Invalid_emailAddress_Message;
+	
+	@FindBy(xpath = "//div[@id='toast-container']/div/div[1]")
+	public WebElement LoginSuccessfull_message;
+	
 	@FindBy(xpath = "//div[@aria-label='Password does not match.']")
 	public WebElement InvalidPassword_message;
 	
@@ -48,6 +57,13 @@ public class LoginPage_object extends BaseClass{
 	
 	@FindBy(xpath = "(//div[@class='app__store__btns']/div/a)[2]")
 	public WebElement AppStore_btn;
+
+	
+	
+	public void Invaliv_emailAddress_validationMessage()
+	{
+		Invalid_emailAddress_Message.getText();
+	}
 	
 	public void EmailField(String email)
 	{

@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="login.LoginSuccessfull">
+      <class name="login.LoginPage_TestCases">
         <methods>
-          <include name="login"/>
           <include name="launchBrowser"/>
           <include name="closeBrowser"/>
+          <include name="Verify_GooglePlay_button_on_LoginPage"/>
         </methods>
-      </class> <!-- login.LoginSuccessfull -->
+      </class> <!-- login.LoginPage_TestCases -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

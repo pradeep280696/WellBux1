@@ -11,6 +11,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.*;
 
@@ -19,10 +20,11 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class BaseClass {
 	
 	
-	public WebDriver driver;
+	public static WebDriver driver;
 	public Properties prop;
-
-	@BeforeTest
+		
+	
+	@BeforeMethod
 	public void launchBrowser(){
 		Properties prop = new Properties();
 		try {
@@ -56,7 +58,7 @@ public class BaseClass {
 		driver.get(url);
 	}
 	
-	@AfterTest
+	@AfterMethod
 	public void closeBrowser()
 	{
 		driver.quit();

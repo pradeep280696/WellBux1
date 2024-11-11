@@ -4,11 +4,14 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+
 import actionInterface.ActionInterface;
 import base.BaseClass;
 
 public class ActionBody extends BaseClass implements ActionInterface{
-
+	
 	@Override
 	public Properties globalData1() {
 		
@@ -21,5 +24,14 @@ public class ActionBody extends BaseClass implements ActionInterface{
 				}
 			return prop;
 	}
+
+	@Override
+	public void PageComplete_loaded() {
+		
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		
+		js.executeScript("return document.readyState").toString().equals("complete");
+	}
+	
 	
 }
