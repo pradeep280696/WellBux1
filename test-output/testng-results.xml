@@ -1,109 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-11T16:37:54 IST" name="Default suite" finished-at="2024-11-11T16:41:45 IST" duration-ms="231049">
+  <suite started-at="2024-11-12T19:25:28 IST" name="Default suite" finished-at="2024-11-12T19:26:48 IST" duration-ms="80269">
     <groups>
     </groups>
-    <test started-at="2024-11-11T16:37:54 IST" name="Default test" finished-at="2024-11-11T16:41:45 IST" duration-ms="231049">
-      <class name="login.LoginPage_TestCases">
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:login.LoginPage_TestCases@452e19ca]" started-at="2024-11-11T16:37:54 IST" name="launchBrowser" finished-at="2024-11-11T16:38:15 IST" duration-ms="20931" status="PASS">
+    <test started-at="2024-11-12T19:25:28 IST" name="Default test" finished-at="2024-11-12T19:26:48 IST" duration-ms="80269">
+      <class name="login.Verify_login_with_MultipleSetData">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:login.Verify_login_with_MultipleSetData@19b843ba]" started-at="2024-11-12T19:25:28 IST" name="launchBrowser" finished-at="2024-11-12T19:25:46 IST" duration-ms="18638" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="Verify_GooglePlay_button_on_LoginPage()[pri:0, instance:login.LoginPage_TestCases@452e19ca]" started-at="2024-11-11T16:38:15 IST" name="Verify_GooglePlay_button_on_LoginPage" finished-at="2024-11-11T16:38:15 IST" duration-ms="232" status="PASS">
+        <test-method signature="Verify_Login_functionality_with_multiple_SetData(java.lang.String,java.lang.String)[pri:0, instance:login.Verify_login_with_MultipleSetData@19b843ba]" started-at="2024-11-12T19:25:46 IST" name="Verify_Login_functionality_with_multiple_SetData" data-provider="LoginTestData1" finished-at="2024-11-12T19:25:49 IST" duration-ms="2857" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[akash2806]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Admin@123]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_GooglePlay_button_on_LoginPage -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:login.LoginPage_TestCases@452e19ca]" started-at="2024-11-11T16:38:15 IST" name="closeBrowser" finished-at="2024-11-11T16:38:16 IST" duration-ms="561" status="PASS">
+        </test-method> <!-- Verify_Login_functionality_with_multiple_SetData -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:login.Verify_login_with_MultipleSetData@19b843ba]" started-at="2024-11-12T19:25:49 IST" name="closeBrowser" finished-at="2024-11-12T19:25:50 IST" duration-ms="316" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:login.LoginPage_TestCases@452e19ca]" started-at="2024-11-11T16:38:16 IST" name="launchBrowser" finished-at="2024-11-11T16:38:37 IST" duration-ms="21661" status="PASS">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:login.Verify_login_with_MultipleSetData@19b843ba]" started-at="2024-11-12T19:25:50 IST" name="launchBrowser" finished-at="2024-11-12T19:26:06 IST" duration-ms="16847" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="Verify_ManadatoryField_validationMessage()[pri:1, instance:login.LoginPage_TestCases@452e19ca]" started-at="2024-11-11T16:38:37 IST" name="Verify_ManadatoryField_validationMessage" finished-at="2024-11-11T16:38:38 IST" duration-ms="391" status="PASS">
+        <test-method signature="Verify_Login_functionality_with_multiple_SetData(java.lang.String,java.lang.String)[pri:0, instance:login.Verify_login_with_MultipleSetData@19b843ba]" started-at="2024-11-12T19:26:06 IST" name="Verify_Login_functionality_with_multiple_SetData" data-provider="LoginTestData1" finished-at="2024-11-12T19:26:09 IST" duration-ms="2507" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[akash2806@gmail]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Admin@123]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_ManadatoryField_validationMessage -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:login.LoginPage_TestCases@452e19ca]" started-at="2024-11-11T16:38:38 IST" name="closeBrowser" finished-at="2024-11-11T16:38:38 IST" duration-ms="495" status="PASS">
+        </test-method> <!-- Verify_Login_functionality_with_multiple_SetData -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:login.Verify_login_with_MultipleSetData@19b843ba]" started-at="2024-11-12T19:26:09 IST" name="closeBrowser" finished-at="2024-11-12T19:26:09 IST" duration-ms="297" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:login.LoginPage_TestCases@452e19ca]" started-at="2024-11-11T16:38:38 IST" name="launchBrowser" finished-at="2024-11-11T16:38:58 IST" duration-ms="20046" status="PASS">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:login.Verify_login_with_MultipleSetData@19b843ba]" started-at="2024-11-12T19:26:09 IST" name="launchBrowser" finished-at="2024-11-12T19:26:25 IST" duration-ms="16070" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="Verify_Login_With_InvalidEmailAddress()[pri:2, instance:login.LoginPage_TestCases@452e19ca]" started-at="2024-11-11T16:38:58 IST" name="Verify_Login_With_InvalidEmailAddress" finished-at="2024-11-11T16:38:59 IST" duration-ms="568" status="PASS">
+        <test-method signature="Verify_Login_functionality_with_multiple_SetData(java.lang.String,java.lang.String)[pri:0, instance:login.Verify_login_with_MultipleSetData@19b843ba]" started-at="2024-11-12T19:26:25 IST" name="Verify_Login_functionality_with_multiple_SetData" data-provider="LoginTestData1" finished-at="2024-11-12T19:26:28 IST" duration-ms="2923" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ian2547@mailinator.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Admin@564684964964798]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_Login_With_InvalidEmailAddress -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:login.LoginPage_TestCases@452e19ca]" started-at="2024-11-11T16:38:59 IST" name="closeBrowser" finished-at="2024-11-11T16:39:00 IST" duration-ms="897" status="PASS">
+        </test-method> <!-- Verify_Login_functionality_with_multiple_SetData -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:login.Verify_login_with_MultipleSetData@19b843ba]" started-at="2024-11-12T19:26:28 IST" name="closeBrowser" finished-at="2024-11-12T19:26:29 IST" duration-ms="292" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:login.LoginPage_TestCases@452e19ca]" started-at="2024-11-11T16:39:00 IST" name="launchBrowser" finished-at="2024-11-11T16:39:19 IST" duration-ms="18793" status="PASS">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:login.Verify_login_with_MultipleSetData@19b843ba]" started-at="2024-11-12T19:26:29 IST" name="launchBrowser" finished-at="2024-11-12T19:26:45 IST" duration-ms="16297" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="Verify_login_with_Non_RegisteredEmailAddress()[pri:3, instance:login.LoginPage_TestCases@452e19ca]" started-at="2024-11-11T16:39:19 IST" name="Verify_login_with_Non_RegisteredEmailAddress" finished-at="2024-11-11T16:39:21 IST" duration-ms="2617" status="PASS">
+        <test-method signature="Verify_Login_functionality_with_multiple_SetData(java.lang.String,java.lang.String)[pri:0, instance:login.Verify_login_with_MultipleSetData@19b843ba]" started-at="2024-11-12T19:26:45 IST" name="Verify_Login_functionality_with_multiple_SetData" data-provider="LoginTestData1" finished-at="2024-11-12T19:26:48 IST" duration-ms="2884" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ian2547@mailinator.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1234567]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_login_with_Non_RegisteredEmailAddress -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:login.LoginPage_TestCases@452e19ca]" started-at="2024-11-11T16:39:21 IST" name="closeBrowser" finished-at="2024-11-11T16:39:22 IST" duration-ms="655" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:login.LoginPage_TestCases@452e19ca]" started-at="2024-11-11T16:39:22 IST" name="launchBrowser" finished-at="2024-11-11T16:40:33 IST" duration-ms="70945" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="Verify_Login_With_Valid_EmailAddress_Invalid_Password()[pri:4, instance:login.LoginPage_TestCases@452e19ca]" started-at="2024-11-11T16:40:33 IST" name="Verify_Login_With_Valid_EmailAddress_Invalid_Password" finished-at="2024-11-11T16:40:35 IST" duration-ms="2603" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_Login_With_Valid_EmailAddress_Invalid_Password -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:login.LoginPage_TestCases@452e19ca]" started-at="2024-11-11T16:40:35 IST" name="closeBrowser" finished-at="2024-11-11T16:40:36 IST" duration-ms="678" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:login.LoginPage_TestCases@452e19ca]" started-at="2024-11-11T16:40:36 IST" name="launchBrowser" finished-at="2024-11-11T16:40:59 IST" duration-ms="22884" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="Verify_Login_with_valid_Credential()[pri:5, instance:login.LoginPage_TestCases@452e19ca]" started-at="2024-11-11T16:40:59 IST" name="Verify_Login_with_valid_Credential" finished-at="2024-11-11T16:41:02 IST" duration-ms="2484" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_Login_with_valid_Credential -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:login.LoginPage_TestCases@452e19ca]" started-at="2024-11-11T16:41:02 IST" name="closeBrowser" finished-at="2024-11-11T16:41:02 IST" duration-ms="763" status="PASS">
+        </test-method> <!-- Verify_Login_functionality_with_multiple_SetData -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:login.Verify_login_with_MultipleSetData@19b843ba]" started-at="2024-11-12T19:26:48 IST" name="closeBrowser" finished-at="2024-11-12T19:26:48 IST" duration-ms="278" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:login.LoginPage_TestCases@452e19ca]" started-at="2024-11-11T16:41:02 IST" name="launchBrowser" finished-at="2024-11-11T16:41:06 IST" duration-ms="3716" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="Verify_SignUp_link_on_LoginPage()[pri:6, instance:login.LoginPage_TestCases@452e19ca]" started-at="2024-11-11T16:41:06 IST" name="Verify_SignUp_link_on_LoginPage" finished-at="2024-11-11T16:41:26 IST" duration-ms="19482" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_SignUp_link_on_LoginPage -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:login.LoginPage_TestCases@452e19ca]" started-at="2024-11-11T16:41:26 IST" name="closeBrowser" finished-at="2024-11-11T16:41:26 IST" duration-ms="654" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:login.LoginPage_TestCases@452e19ca]" started-at="2024-11-11T16:41:26 IST" name="launchBrowser" finished-at="2024-11-11T16:41:44 IST" duration-ms="17901" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="Verify_ForgotPassword_Link_on_LoginPage()[pri:7, instance:login.LoginPage_TestCases@452e19ca]" started-at="2024-11-11T16:41:44 IST" name="Verify_ForgotPassword_Link_on_LoginPage" finished-at="2024-11-11T16:41:45 IST" duration-ms="507" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Verify_ForgotPassword_Link_on_LoginPage -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:login.LoginPage_TestCases@452e19ca]" started-at="2024-11-11T16:41:45 IST" name="closeBrowser" finished-at="2024-11-11T16:41:45 IST" duration-ms="431" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- login.LoginPage_TestCases -->
+      </class> <!-- login.Verify_login_with_MultipleSetData -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

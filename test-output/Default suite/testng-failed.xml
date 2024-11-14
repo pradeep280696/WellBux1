@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="login.LoginPage_TestCases">
+      <class name="login.Verify_login_with_MultipleSetData">
         <methods>
+          <include name="Verify_Login_functionality_with_multiple_SetData"/>
           <include name="launchBrowser"/>
           <include name="closeBrowser"/>
-          <include name="Verify_GooglePlay_button_on_LoginPage"/>
         </methods>
-      </class> <!-- login.LoginPage_TestCases -->
+      </class> <!-- login.Verify_login_with_MultipleSetData -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
