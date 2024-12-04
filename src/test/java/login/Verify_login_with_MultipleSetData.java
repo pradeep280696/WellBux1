@@ -1,5 +1,9 @@
 package login;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -24,20 +28,20 @@ public class Verify_login_with_MultipleSetData extends BaseClass {
 
 		if (driver.getPageSource().contains("User not found")) {
 			System.out.println("This user is not registered with us: " + email);
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 		} else if (driver.getPageSource().contains("Email is invalid")) {
 			System.out.println("This user is not registered with us and login not happening: " + email);
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 
 		}else if(driver.getPageSource().contains("Password does not match."))
 		{
 			System.out.println("Entered password is incorret for email: "+ email);
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 		}
 		else 
 		{
 			System.out.println("Unknow error for this account: "+ email + "\n" + password);
-			Assert.assertFalse(true);
+			AssertJUnit.assertFalse(true);
 		}
 	}
 

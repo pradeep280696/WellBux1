@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite">
+	<parameter name="browserName" value="chrome" />
+	<parameter name="email" value="pradeep28@gmail.com" />
+	<test name="LoginPage_TestCases" enabled = "false">
+		<classes>
+			<class name="login.Verify_login_with_MultipleSetData" />
+			<class name="login.LoginPage_TestCases" />
+			<class name="login.LoginSuccessfull" />
+		</classes>
+	</test>
+	<test name="Verify_login_with_invalid_email" enabled="false">
+		<classes>
+			<class name="login.LoginPage_TestCases">
+				<methods>
+					<include name="Verify_Login_With_InvalidEmailAddress" />
+					<include name="Verify_Login_with_valid_Credential" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Verify_login_with_valid_credential1">
+		<classes>
+			<class name="login.LoginPage_TestCases">
+				<methods>
+					<include name="Verify_Login_with_valid_Credential"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

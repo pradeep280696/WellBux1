@@ -1,5 +1,9 @@
 package login;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import static org.testng.Assert.assertEquals;
 
 import java.util.ArrayList;
@@ -25,8 +29,8 @@ public class LoginPage_TestCases extends BaseClass {
 		String EmailField_ManadatoryMessage = act.globalData1().getProperty("EmailField_required");
 		String PasswordField_MandatoryMessage = act.globalData1().getProperty("PasswordField_required");
 
-		Assert.assertEquals(EmailField_ManadatoryMessage, lgn.Email_ManadatoryValidation_message.getText());
-		Assert.assertEquals(PasswordField_MandatoryMessage, lgn.Password_ManadatoryValidation_message.getText());
+		AssertJUnit.assertEquals(EmailField_ManadatoryMessage, lgn.Email_ManadatoryValidation_message.getText());
+		AssertJUnit.assertEquals(PasswordField_MandatoryMessage, lgn.Password_ManadatoryValidation_message.getText());
 		System.out.println("Validation message is visible on both Email and Password field");
 	}
 
@@ -40,8 +44,8 @@ public class LoginPage_TestCases extends BaseClass {
 		lgn.SignIn_button();
 
 		String invalidEmailAddress_ValidionMessage = act.globalData1().getProperty("Ivalid_EmailAddress_Message");
-		Assert.assertEquals(invalidEmailAddress_ValidionMessage, lgn.Invalid_emailAddress_Message.getText());
-		Assert.assertEquals(act.globalData1().getProperty("loginPage_url"), driver.getCurrentUrl());
+		AssertJUnit.assertEquals(invalidEmailAddress_ValidionMessage, lgn.Invalid_emailAddress_Message.getText());
+		AssertJUnit.assertEquals(act.globalData1().getProperty("loginPage_url"), driver.getCurrentUrl());
 		System.out.println("Login not happening on invalid email address: "
 				+ act.globalData1().getProperty("Invalid_EmailAddress1"));
 	}
@@ -57,8 +61,8 @@ public class LoginPage_TestCases extends BaseClass {
 		Thread.sleep(2000);
 
 		String UserNotFound_Message = act.globalData1().getProperty("UserNotFound_Message");
-		Assert.assertEquals(UserNotFound_Message, lgn.UserNotFound_message.getText());
-		Assert.assertEquals(act.globalData1().getProperty("loginPage_url"), driver.getCurrentUrl());
+		AssertJUnit.assertEquals(UserNotFound_Message, lgn.UserNotFound_message.getText());
+		AssertJUnit.assertEquals(act.globalData1().getProperty("loginPage_url"), driver.getCurrentUrl());
 		System.out.println("Login not happening on valids Non-registered email address: "
 				+ act.globalData1().getProperty("Non_registered_EmailAddress"));
 		System.out.println(lgn.UserNotFound_message.getText());
@@ -79,8 +83,8 @@ public class LoginPage_TestCases extends BaseClass {
 			e.printStackTrace();
 		}
 		String PasswordDoesNotMatch_Message = act.globalData1().getProperty("PasswordDoesNotMatch_Message");
-		Assert.assertEquals(PasswordDoesNotMatch_Message, lgn.PasswordDoesNotMatch_Message.getText());
-		Assert.assertEquals(act.globalData1().getProperty("loginPage_url"), driver.getCurrentUrl());
+		AssertJUnit.assertEquals(PasswordDoesNotMatch_Message, lgn.PasswordDoesNotMatch_Message.getText());
+		AssertJUnit.assertEquals(act.globalData1().getProperty("loginPage_url"), driver.getCurrentUrl());
 		System.out.println("Login not happening on invalid password");
 	}
 
@@ -95,7 +99,7 @@ public class LoginPage_TestCases extends BaseClass {
 		Thread.sleep(2000);
 
 		String Successful_Login_message = act.globalData1().getProperty("LoginSuccessfull_Message");
-		Assert.assertEquals(lgn.LoginSuccessfull_message.getText(), Successful_Login_message);
+		AssertJUnit.assertEquals(lgn.LoginSuccessfull_message.getText(), Successful_Login_message);
 		System.out.println("Login successful on valid credential");
 	}
 
@@ -106,7 +110,7 @@ public class LoginPage_TestCases extends BaseClass {
 
 		lgn.SignUp_link();
 
-		Assert.assertEquals(driver.getCurrentUrl(), act.globalData1().getProperty("SignupPage_url"));
+		AssertJUnit.assertEquals(driver.getCurrentUrl(), act.globalData1().getProperty("SignupPage_url"));
 		System.out.println("User is rediecting on the signup page after clicking on the Sign up link");
 	}
 
@@ -118,9 +122,9 @@ public class LoginPage_TestCases extends BaseClass {
 		lgn.ForgotPassowrd_link();
 
 		if (driver.getPageSource().contains("Forgot password")) {
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 		} else {
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 	} 
 	
